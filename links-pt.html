@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFO Studio - links</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./links-files/style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <img src="./links-files/logo1.svg" alt="Logo VFO Studio light">
+                </div>
+                <div class="horario">
+                    <h2>Olá!</h2>
+                </div>
+            </header>
+            <main>
+                <div class="buttons">
+                    <button type="button" onclick="window.location.href='pt.html';">Página do VFO Studio</button>
+                    <button type="button" onclick="window.location.href='https://www.redbubble.com/people/victor-fo';">VFO Shop - international</button>
+                    <button type="button" onclick="window.location.href='vfoshop-br.html';">VFO Shop - Brasil</button>
+                    <button type="button" onclick="window.location.href='https://payhip.com/VFOStudio';">Download de arte digital</button>
+                    <button type="button" onclick="window.location.href='https://www.instagram.com/vfo.studio/';">Instagram</button>
+                    <button type="button" onclick="window.location.href='https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A';">YouTube</button>
+                </div>
+                <div class="char"></div>
+            </main>
+            <footer>
+                <p>
+                    &copy; 2022 VFO Studio • por Victor F. Oliveira<br>Todos os direitos reservados
+                </p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="./links-files/script-pt.js"></script>
+    <script>
+        // footer
+        const d = new Date();
+        let year = d.getFullYear();
+        document.querySelector('footer').innerHTML = `&copy; ${year} VFO Studio • por Victor F. Oliveira<br>Todos os direitos reservados`
+    </script>
+</body>
+</html>

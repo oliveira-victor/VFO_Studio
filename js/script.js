@@ -1,0 +1,49 @@
+// hiding bar
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+    document.getElementById("header").style.top = "0";
+    } else {
+    document.getElementById("header").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+}
+
+// mosaic
+$('#instaheader1').instaheader();
+$('#instaheader2').instaheader({
+    reuseImages : false,
+    delay       : 3000
+});
+$('#instaheader3').instaheader({
+    imageUrl    : 'newpicture.html'
+});
+$('#instaheader4').instaheader({
+    selector    : 'div.bg-img',
+    imageUrl    : 'newpicture.html',
+    background  : true
+});
+$('#instaheader5').instaheader({
+    selector    : 'div.bg-img',
+    background  : true
+});
+
+// animated photos
+function reveal() {
+    var reveals = document.querySelectorAll(".reveal");
+
+    for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add("active");
+        } else {
+        reveals[i].classList.remove("active");
+        }
+    }
+}
+
+window.addEventListener("scroll", reveal);

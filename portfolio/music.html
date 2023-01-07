@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VFO Studio</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/gallery.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <header id="header">
+            <div class="menu">
+                <div class="menu-left">
+                    <a href="../index.html"><img src="../img/logo1.svg" alt="VFO Studio dark theme"></a>
+                </div>
+                <div class="menu-right">
+                    <a href="../links.html"><div class="menu-button">Links</div></a>
+                    <a href="../index.html#section3"><div class="menu-button">About</div></a>
+                    <a href="../index.html#section5"><div class="menu-button">Contact</div></a>
+                </div>
+            </div>
+        </header>
+        <section class="wrapper portfolio-container">
+            <h1>Music</h1>
+            <div class="space-up">
+                <p>Here you can find a few themes created by the Studio. Those themes are usually inspired by a painting and they can be used for animations, video games, soundtracks for videos, intros and many things more.</p>
+                <br><br><i>'If you're using a portable device, touch 'Listen in browser' to play the music'.</i>
+            </div>
+            <div class="grid-2 space-up center">
+                <div>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1363584730&color=%23eeee32&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vfostudio" title="Vfostudio" target="_blank" style="color: #cccccc; text-decoration: none;">Vfostudio</a> · <a href="https://soundcloud.com/vfostudio/crossing-the-dark-woods" title="Crossing The Dark Woods" target="_blank" style="color: #cccccc; text-decoration: none;">Crossing The Dark Woods</a></div>
+                </div>
+                <div>
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1363582405&color=%23317e19&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/vfostudio" title="Vfostudio" target="_blank" style="color: #cccccc; text-decoration: none;">Vfostudio</a> · <a href="https://soundcloud.com/vfostudio/bear-walk" title="Bear Walk" target="_blank" style="color: #cccccc; text-decoration: none;">Bear Walk</a></div>
+                </div>
+            </div>
+            <div class="gallery-menu">
+                <a href="./illustration.html"><div class="gallery-button">Illustration</div></a>
+                <a href="./animals.html"><div class="gallery-button">Animal Symbology</div></a>
+                <a href="./animation.html"><div class="gallery-button">Animation</div></a>
+                <a href="./book-illustration.html"><div class="gallery-button">Book illustration</div></a>
+                <a href="./character-design.html"><div class="gallery-button">Character design</div></a>
+                <a href="./custom-products.html"><div class="gallery-button">Custom products</div></a>
+                <a href="./graphic-design.html"><div class="gallery-button">Graphic design</div></a>
+            </div>
+            <a href="../index.html"><p class="link-voltar">Página inicial</p></a>
+        </section>
+
+        <footer>
+            <div id="footer-text">
+                &copy; VFO Studio • by Victor Freire Oliveira<br>All rights reserved
+            </div>
+            <div id="footer-logo">
+                <img src="../img/logo2.svg" alt="">
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../js/jquery.instaheader.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        // footer
+        const d = new Date();
+        let year = d.getFullYear();
+        document.getElementById('footer-text').innerHTML = `&copy; ${year} VFO Studio • by Victor Freire Oliveira<br>All rights reserved`
+    </script>
+</body>
+</html>
