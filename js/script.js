@@ -14,8 +14,6 @@ var currentScrollPos = window.pageYOffset;
 var loader = document.getElementById('preloader');
 
 window.addEventListener("load", function() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     
     loader.classList.add("fade-out")
     
