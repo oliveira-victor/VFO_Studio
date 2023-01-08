@@ -10,6 +10,23 @@ var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 }
 
+//preloader
+var loader = document.getElementById('preloader');
+
+window.addEventListener("load", function() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    
+    loader.classList.add("fade-out")
+    
+    // loader.style.display = "none"
+    
+    setTimeout(function(){
+    loader.style.display = "none";
+}, 1000);
+    
+})
+
 // mosaic
 $('#instaheader1').instaheader();
 $('#instaheader2').instaheader({

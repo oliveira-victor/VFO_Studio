@@ -38,6 +38,16 @@ a {
     color: #469657;
 }
 
+#preloader {
+    background: #fff url(../img/loader.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-size: 15%;
+    top: 0;
+    z-index: 100;
+}
+
 .main-wrapper {
     max-width: 1920;
     width: 100%;
@@ -622,4 +632,17 @@ footer {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
+}
+
+.fade-out { animation: fadeOut 1s; }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media screen and (max-width: 1023px) {
+    #preloader {
+        background-size: 30vw;
+    }
 }
