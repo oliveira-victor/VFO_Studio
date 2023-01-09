@@ -14,7 +14,10 @@ var currentScrollPos = window.pageYOffset;
 var loader = document.getElementById('preloader');
 
 setTimeout(function(){
-    loader.style.display = "none";
+    loader.classList.add("fade-out")
+    setTimeout(function(){
+        loader.style.display = "none";
+    }, 1000);
 }, 5000);
 
 window.addEventListener("load", function() {
