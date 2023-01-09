@@ -13,6 +13,10 @@ var currentScrollPos = window.pageYOffset;
 //preloader
 var loader = document.getElementById('preloader');
 
+setTimeout(function(){
+    loader.style.display = "none";
+}, 5000);
+
 window.addEventListener("load", function() {
     
     loader.classList.add("fade-out")
