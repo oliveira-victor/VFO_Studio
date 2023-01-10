@@ -272,8 +272,6 @@ header img {
     }
 
     .pf-cover {
-        width: 300px;
-        height: 300px;
         margin: 20px auto;
         font-size: 34pt;
         background-size: cover;

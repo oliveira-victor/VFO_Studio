@@ -43,6 +43,17 @@
     text-align: center;
 }
 
+@media screen and (max-width: 767px) {
+    .image-gallery {
+        display: block;
+    }
+
+    .image-gallery li {
+        height: 100%;
+        margin-top: 5px;
+    }
+}
+
 @media screen and (max-width: 1023px) {
     .gallery-menu {
         width: 90%;
