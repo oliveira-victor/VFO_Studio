@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="./css/gallery.css">
+    <!-- lightbox -->
+    <link rel="stylesheet" href="./lightbox/lightbox.css">
 </head>
 <body>
     <div class="main-wrapper">
@@ -61,31 +63,31 @@
             <div class="gallery space-up">
                 <ul class="image-gallery">
                     <li>
-                        <img src="img/c01+.jpg">
+                        <a href="img/c01+.jpg" data-lightbox="book"><img src="img/c01+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c02+.jpg">
+                        <a href="img/c02+.jpg" data-lightbox="book"><img src="img/c02+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c03+.jpg">
+                        <a href="img/c03+.jpg" data-lightbox="book"><img src="img/c03+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c04+.jpg">
+                        <a href="img/c04+.jpg" data-lightbox="book"><img src="img/c04+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c05+.jpg">
+                        <a href="img/c05+.jpg" data-lightbox="book"><img src="img/c05+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c06+.jpg">
+                        <a href="img/c06+.jpg" data-lightbox="book"><img src="img/c06+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c07+.jpg">
+                        <a href="img/c07+.jpg" data-lightbox="book"><img src="img/c07+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c08+.jpg">
+                        <a href="img/c08+.jpg" data-lightbox="book"><img src="img/c08+.jpg"></a>
                     </li>
                     <li>
-                        <img src="img/c09+.jpg">
+                        <a href="img/c09+.jpg" data-lightbox="book"><img src="img/c09+.jpg"></a>
                     </li>
                 </ul>
             </div>
@@ -113,6 +115,9 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../js/jquery.instaheader.js"></script>
     <script src="../js/script.js"></script>
+    <!-- lightbox -->
+    <script src="./lightbox/lightbox.js"></script>
+    <!-- /lightbox -->
     <script>
         // footer
         const d = new Date();
