@@ -31,13 +31,82 @@
                 <div class="menu-left">
                     <a href="index.html"><img src="./img/logo1.svg" alt="VFO Studio dark theme"></a>
                 </div>
+                <div class="phone-menu" onclick="phoneMenu()">
+                    <img src="./img/menu-icon.svg" alt="Hamburguer menu icon">
+                </div>
                 <div class="menu-right">
-                    <a href="links.html"><div class="menu-button">Links</div></a>
-                    <a href="#section3"><div class="menu-button">About</div></a>
-                    <a href="#section5"><div class="menu-button">Contact</div></a>
+                    <a href="#section2"><div class="menu-button">Portfolio</div></a>
+                    <a href="#section3"><div class="menu-button">Services</div></a>
+                    <a href="#section4"><div class="menu-button">About</div></a>
+                    <a href="#section6"><div class="menu-button">Contact</div></a>
+                    <a href="links.html"><div class="menu-button"><button type="button" class="link-button">Links</button></div></a>
                 </div>
             </div>
         </header>
+        <div id="bottom-menu" class="rise"><!-- phone menu -->
+            <div class="menu-grid">
+                <a href="#section2">
+                    <div class="menu-cell">
+                        <ul>
+                            <li>
+                                <img src="./img/icon-portfolio.svg">
+                            </li>
+                            <li>
+                                Portfolio
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#section3">
+                    <div class="menu-cell">
+                        <ul>
+                            <li>
+                                <img src="./img/icon-services.svg">
+                            </li>
+                            <li>
+                                Services
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#section4">
+                    <div class="menu-cell">
+                        <ul>
+                            <li>
+                                <img src="./img/icon-about.svg">
+                            </li>
+                            <li>
+                                About
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="#section6">
+                    <div class="menu-cell">
+                        <ul>
+                            <li>
+                                <img src="./img/icon-contact.svg">
+                            </li>
+                            <li>
+                                Contact
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+                <a href="./links.html">
+                    <div class="menu-cell">
+                        <ul>
+                            <li>
+                                <img src="./img/icon-links.svg">
+                            </li>
+                            <li>
+                                Links
+                            </li>
+                        </ul>
+                    </div>
+                </a>
+            </div>
+        </div>
         <section class="hero" id="section1">
             <div class="hero-content fade-in">
                 <img src="img/welcome.svg" alt="Welcome message" width="250px" style="margin: 30px;">
@@ -58,8 +127,36 @@
                 <a href="portfolio/music.html"><div id="cover8" class="pf-cover">Music</div></a>
             </div>
         </section>
-        <section id="section2" style="background-color: #fff; height: 50px; margin-top: 80px;"></section>
-        <section class="wrapper about" id="section3">
+        <section class="services" id="section3">
+            <h1>Services</h1>
+            <div class="container-cp">
+                <div class="card-carousel">
+                    <div class="card" id="1">
+                        <div class="image-container-cp"></div>
+                        <p><b>Character design</b><br>Creative ideas when you need some character with shape and personality.<br><a href="services.html#character-design">Learn more</a></p>
+                    </div>
+                    <div class="card" id="2">
+                        <div class="image-container-cp"></div>
+                        <p><b>Graphic design</b><br>Find solutions for your needs when it comes to creating graphic elements.<br><a href="services.html#graphic-design">Learn more</a></p>
+                    </div>
+                    <div class="card" id="3">
+                        <div class="image-container-cp"></div>
+                        <p><b>Custom illustration</b><br>Order an illustration for your project, to gift someone or do whatever you feel like with an exclusive artwork.<br><a href="services.html#custom-illustration">Learn more</a></p>
+                    </div>  
+                    <div class="card" id="4">
+                        <div class="image-container-cp"></div>
+                        <p><b>Book illustration</b><br>Are you a writer? Professional or not, what about bringing life to your stories with inspiring illustration?<br><a href="services.html#book-illustration">Learn more</a></p>
+                    </div>
+                    <div class="card" id="5">
+                        <div class="image-container-cp"></div>
+                        <p><b>Animation</b><br>Need more dynamism? Check out some animation ideas that will make your project pop!<br><a href="services.html#animation">Learn more</a></p>
+                    </div>
+                </div>
+                    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+            </div>
+                <img src="img/swipe.gif" id="swipe-img">
+        </section>
+        <section class="wrapper about" id="section4">
             <h1>About VFO Studio</h1>
             <div class="video-container">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/fEnC1atyKaI?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -98,36 +195,9 @@
                 <p style="margin-bottom: 100px;"><i>"Throughout the years, VFO Studio has helped many clients express their ideas, finding solution to their problems in a creative way. From illustration to be gifted to the loved ones, to logos, videos and book illustration, people look for my services with different goals.<br><br>I'm a freelancer artist and designer who likes to play with creativity and create inspiring things for myself and for people who need this kind of way of expressing ideas and feelings. You can also contact me and let me know what kind of creative service you need, or maybe discuss ideas and suggest some partnership."</i> :)<br><br>- Victor Freire Oliveira.</p>
             </div>
         </section>
-        <section class="services" id="section4">
-            <h1>Services</h1>
-            <div class="container-cp">
-                <div class="card-carousel">
-                    <div class="card" id="1">
-                        <div class="image-container-cp"></div>
-                        <p><b>Character design</b><br>Creative ideas when you need some character with shape and personality.<br><a href="services.html#character-design">Learn more</a></p>
-                    </div>
-                    <div class="card" id="2">
-                        <div class="image-container-cp"></div>
-                        <p><b>Graphic design</b><br>Find solutions for your needs when it comes to creating graphic elements.<br><a href="services.html#graphic-design">Learn more</a></p>
-                    </div>
-                    <div class="card" id="3">
-                        <div class="image-container-cp"></div>
-                        <p><b>Custom illustration</b><br>Order an illustration for your project, to gift someone or do whatever you feel like with an exclusive artwork.<br><a href="services.html#custom-illustration">Learn more</a></p>
-                    </div>  
-                    <div class="card" id="4">
-                        <div class="image-container-cp"></div>
-                        <p><b>Book illustration</b><br>Are you a writer? Professional or not, what about bringing life to your stories with inspiring illustration?<br><a href="services.html#book-illustration">Learn more</a></p>
-                    </div>
-                    <div class="card" id="5">
-                        <div class="image-container-cp"></div>
-                        <p><b>Animation</b><br>Need more dynamism? Check out some animation ideas that will make your project pop!<br><a href="services.html#animation">Learn more</a></p>
-                    </div>
-                </div>
-                    <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
-            </div>
-                <img src="img/swipe.gif" id="swipe-img">
-        </section>
-        <section class="wrapper contact" id="section5">
+        <!-- <section id="section5" style="background-color: #fff; height: 50px; margin-top: 80px;"></section> -->
+        
+        <section class="wrapper contact" id="section6">
             <h1>Contact</h1>
             <p>Thank you for your interest in my work! You can count on me for projects you want to develop and if you need some ideas or visual and auditory elements. Let's talk and let creativity flow, beautiful things will certainly pop up and solutions will be found through art and graphic design.</p>
             <div class="form-container">
@@ -162,6 +232,7 @@
                 <img src="./img/logo2.svg" alt="">
             </div>
         </footer>
+        <div class="empty-bottom"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="./js/jquery.instaheader.js"></script>

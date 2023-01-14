@@ -69,3 +69,30 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+// phone menu
+let toggleMenu = false
+const bottomMenu = document.querySelector('#bottom-menu')
+const emptyBottom = document.querySelector('.empty-bottom')
+
+function phoneMenu() {
+    if (toggleMenu == false) {
+        toggleMenu = true
+        bottomMenu.classList.remove('hide')
+        bottomMenu.classList.add('rise')
+        bottomMenu.style.display = 'block'
+        emptyBottom.style.display = 'block'
+    } else {
+        toggleMenu = false
+        bottomMenu.classList.remove('rise')
+        bottomMenu.classList.add('hide')
+
+            setTimeout(function() {
+                bottomMenu.style.display = 'none'
+                emptyBottom.style.display = 'none'
+            }, 100)
+        
+        
+    }
+}
