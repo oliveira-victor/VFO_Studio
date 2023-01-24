@@ -10,7 +10,7 @@ var currentScrollPos = window.pageYOffset;
     prevScrollpos = currentScrollPos;
 }
 
-//preloader
+// preloader
 var loader = document.getElementById('preloader');
 
 setTimeout(function(){
@@ -96,3 +96,8 @@ function phoneMenu() {
         
     }
 }
+
+// footer
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById('footer-text').innerHTML = `&copy; ${year} VFO Studio • by Victor Freire Oliveira<br>All rights reserved`
