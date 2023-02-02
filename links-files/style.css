@@ -48,14 +48,15 @@ main {
 }
 
 button {
-    background-color: #0da72e;
+    background: rgba(205,202,255,0.3);
+    background: radial-gradient(circle, rgba(205,202,255,0.3) 0%, rgba(225,225,255,0.5) 0%, rgba(255,255,255,0.3) 100%);
+    border: 2px solid #fff;
     color: #fff;
     max-width: 500px;
     width: 90%;
     height: 60px;
     margin: 10px 10px;
-    border: none;
-    border-radius: 15px;
+    border-radius: 30px;
     font-size: 20px;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
