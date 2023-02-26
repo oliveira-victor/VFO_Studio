@@ -251,6 +251,7 @@ header img {
     font-family: 'Fredoka One', cursive;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     text-shadow: 1px 1px 2px black;
+    border-radius: 6px;
 }
 
 .pf-cover:hover {
