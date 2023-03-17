@@ -8,6 +8,7 @@ form {
     margin-top: 30px;
     display: grid;
     grid-template-columns: 50% 50%;
+    gap: 12%;
 }
 
 .form-left {
@@ -71,6 +72,7 @@ textarea {
 @media screen and (max-width: 1023px) {
     .form-container {
         display: block;
+        text-align: center;
     }
 
     input, textarea, #submit-button {
