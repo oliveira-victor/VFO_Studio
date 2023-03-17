@@ -21,7 +21,9 @@
             <img src="./dist/images/links/bear1.png" class="b01">
             <div class="parallax-menu">
                 <img class="parallax-menu__img" src="./dist/images/logo1.svg" alt="Profile picture">
-                <h1>Good Morning!</h1>
+                <div class="greetings">
+                    <h1>Hello!</h1>
+                </div>
                 <p class="parallax-menu__subtitle">Here's where you can find us</p>
                 <a href="./index.html"><button class="parallax-menu__button" type="button">VFO Studio's page</button></a>
                 <a href="https://www.redbubble.com/people/victor-fo/shop" target="_blank"><button class="parallax-menu__button" type="button">VFO Shop - international</button></a>
@@ -50,11 +52,6 @@
             </div>
         </footer>
     </div>
-    <script>
-        // footer
-        const d = new Date();
-        let year = d.getFullYear();
-        document.querySelector('#footer-txt').innerHTML = `&copy; ${year} VFO Studio • <nobr>by Victor Freire Oliveira</nobr><br>All rights reserved<br><a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>`
-    </script>
+    <script src="./dist/js/links/links.js"></script>
 </body>
 </html>
