@@ -1,0 +1,73 @@
+@use 'variables';
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+}
+
+section img {
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+.services-content {
+    margin-top: 80px;
+}
+
+.service-card {
+    background-color: #eeeeee;
+    width: 90%;
+    margin: 0 auto 10vh auto;
+    border-radius: 25px;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-text {
+    display: grid;
+    grid-template-columns: 70% auto;
+    gap: 2%;
+}
+
+.side-b {
+    text-align: center;
+}
+
+.hire {
+    width: 70%;
+    height: 6vh;
+    margin: 0 auto;
+    background-color: variables.$buttonColor;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+
+    &:hover {
+        background-color: darken(variables.$buttonColor, 10%);
+    }
+}
+
+#service-form {
+    text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+    .service-card {
+    width: 100%;
+}
+
+    .card-text {
+    display: block;
+}
+
+.hire {
+    margin-top: 3vh;
+    height: 8vh;
+}
+
+}

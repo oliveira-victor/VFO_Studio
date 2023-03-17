@@ -1,0 +1,109 @@
+.covers {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    gap: 20px;
+}
+
+.pf-cover {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    font-size: 3vw;
+    font-family: 'Fredoka One', cursive;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 1px 1px 2px black;
+    border-radius: 6px;
+
+    &:hover {
+        transform: translateY(-7px);
+    }
+}
+
+#cover1 {
+    background-image: url(../images/pf01.jpg);
+    color: #fcff39;
+}
+
+#cover2 {
+    background-image: url(../images/pf02.jpg);
+    color: #37692b;
+}
+
+#cover3 {
+    background-image: url(../images/pf03.gif);
+    color: #b7d890;
+}
+
+#cover4 {
+    background-image: url(../images/pf04.jpg);
+    color: #5f8bdf;
+}
+
+#cover5 {
+    background-image: url(../images/pf05.jpg);
+    color: #424242;
+}
+
+#cover6 {
+    background-image: url(../images/pf06.jpg);
+    color: #e69942;
+}
+
+#cover7 {
+    background-image: url(../images/pf07.jpg);
+    color: #fff;
+}
+
+#cover8 {
+    background-image: url(../images/pf08.jpg);
+    color: #463521;
+}
+
+@media screen and (max-width: 767px) {
+
+    .covers {
+        display: block;
+    }
+
+    .pf-cover {
+        margin: 20px auto;
+        font-size: 34pt;
+        background-size: cover;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .covers {
+        grid-template-columns: auto auto;
+    }
+
+    .pf-cover {
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        font-size: 5vw;
+
+        &:hover {
+            transform: none;
+        }
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    .covers {
+        grid-template-columns: auto auto auto;
+    }
+
+    .pf-cover {
+        width: 300px;
+        height: 300px;
+        font-size: 4.5vh;
+        background-size: cover;
+    }
+}

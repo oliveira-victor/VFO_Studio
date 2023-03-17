@@ -1,0 +1,92 @@
+@use 'header';
+@use 'hero';
+@use 'portfolio';
+@use 'services';
+@use 'about';
+@use 'contact';
+@use 'footer';
+@use 'variables';
+@use 'effects';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+    color: variables.$darkColor;
+    background-color: #fff;
+}
+
+section {
+    padding-top: 20px;
+}
+
+h1 {
+    font-size: 32pt;
+    padding: 20px;
+    font-weight: lighter;
+    color: variables.$darkColor;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2 {
+    padding: 20px;
+    font-weight: lighter;
+    color: variables.$darkColor;
+    text-align: center;
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: variables.$buttonColor;
+}
+
+li {
+    list-style: none;
+}
+
+#preloader {
+    background: #fff url(../images/loader.gif) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    background-size: 15%;
+    top: 0;
+    z-index: 100;
+}
+
+.main-wrapper {
+    max-width: 1920;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.wrapper {
+    max-width: 1600px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+    #section2, #section3,
+    #section4, #section6 {
+        padding-top: 80px;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        width: 90%;
+    }
+}

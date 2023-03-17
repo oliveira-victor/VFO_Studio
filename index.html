@@ -19,27 +19,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/main.css">
     <!-- services carousel -->
-    <link rel="stylesheet" href="css/style-services.css">
+    <link rel="stylesheet" href="./dist/css/style-services.css">
 </head>
 <body>
     <div id="preloader"></div>
     <div class="main-wrapper">
         <header id="header">
             <div class="menu">
-                <div class="menu-left">
-                    <a href="index.html"><img src="./img/logo1.svg" alt="VFO Studio dark theme"></a>
+                <div class="menu__left">
+                    <a href="index.html"><img src="./dist/images/logo1.svg" alt="VFO Studio dark theme"></a>
                 </div>
                 <div class="phone-menu" onclick="phoneMenu()">
-                    <img src="./img/menu-icon.svg" alt="Hamburguer menu icon">
+                    <img src="./dist/images/menu-icon.svg" alt="Hamburguer menu icon">
                 </div>
-                <div class="menu-right">
-                    <a href="#section2"><div class="menu-button">Portfolio</div></a>
-                    <a href="#section3"><div class="menu-button">Services</div></a>
-                    <a href="#section4"><div class="menu-button">About</div></a>
-                    <a href="#section6"><div class="menu-button">Contact</div></a>
-                    <a href="links.html"><div class="menu-button"><button type="button" class="link-button">Links</button></div></a>
+                <div class="menu__right">
+                    <a href="#section2"><div class="menu__button">Portfolio</div></a>
+                    <a href="#section3"><div class="menu__button">Services</div></a>
+                    <a href="#section4"><div class="menu__button">About</div></a>
+                    <a href="#section6"><div class="menu__button">Contact</div></a>
+                    <a href="links.html"><div class="menu__button"><button type="button" class="menu__link-button">Links</button></div></a>
                 </div>
             </div>
         </header>
@@ -49,7 +49,7 @@
                     <div class="menu-cell">
                         <ul>
                             <li>
-                                <img src="./img/icon-portfolio.svg">
+                                <img src="./dist/images/icon-portfolio.svg">
                             </li>
                             <li>
                                 Portfolio
@@ -61,7 +61,7 @@
                     <div class="menu-cell">
                         <ul>
                             <li>
-                                <img src="./img/icon-services.svg">
+                                <img src="./dist/images/icon-services.svg">
                             </li>
                             <li>
                                 Services
@@ -73,7 +73,7 @@
                     <div class="menu-cell">
                         <ul>
                             <li>
-                                <img src="./img/icon-about.svg">
+                                <img src="./dist/images/icon-about.svg">
                             </li>
                             <li>
                                 About
@@ -85,7 +85,7 @@
                     <div class="menu-cell">
                         <ul>
                             <li>
-                                <img src="./img/icon-contact.svg">
+                                <img src="./dist/images/icon-contact.svg">
                             </li>
                             <li>
                                 Contact
@@ -97,7 +97,7 @@
                     <div class="menu-cell">
                         <ul>
                             <li>
-                                <img src="./img/icon-links.svg">
+                                <img src="./dist/images/icon-links.svg">
                             </li>
                             <li>
                                 Links
@@ -108,8 +108,8 @@
             </div>
         </div>
         <section class="hero" id="section1">
-            <div class="hero-content fade-in">
-                <img src="img/welcome.svg" alt="Welcome message" width="250px" style="margin: 30px;">
+            <div class="hero__content fade-in">
+                <img src="./dist/images/welcome.svg" alt="Welcome message" width="250px" style="margin: 30px;">
                 <p>An art studio by: <br>Victor F. Oliveira</p>
                 <div class="bounce"><a href="#section2"><div id="btn">START</div></a></div>
             </div>
@@ -154,44 +154,44 @@
                 </div>
                     <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
             </div>
-                <img src="img/swipe.gif" id="swipe-img">
+                <img src="./dist/images/swipe.gif" id="swipe-img">
         </section>
         <section class="wrapper about" id="section4">
             <h1>About VFO Studio</h1>
-            <div class="video-container">
+            <div class="video__container">
                 <a data-fslightbox="gallery" href="https://youtu.be/fEnC1atyKaI">
-                    <img src="./img/vfo-video.jpg">
+                    <img src="./dist/images/vfo-video.jpg">
                 </a>
             </div>
-            <div class="about-content">
-                <div class="about-square">
-                    <div id="instaheader1" data-images='["img/mosaic/pic10.jpg", "img/mosaic/pic11.jpg", "img/mosaic/pic12.jpg", "img/mosaic/pic13.jpg", "img/mosaic/pic14.jpg", "img/mosaic/pic15.jpg", "img/mosaic/pic16.jpg", "img/mosaic/pic17.jpg", "img/mosaic/pic18.jpg", "img/mosaic/pic19.jpg"]'>
-                        <div><img src="./img/mosaic/pic1.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic2.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic3.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic4.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic5.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic6.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic7.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic8.jpg" alt=""></div>
-                        <div><img src="./img/mosaic/pic9.jpg" alt=""></div>
+            <div class="about__content">
+                <div class="about__square">
+                    <div id="instaheader1" data-images='["dist/images/mosaic/pic10.jpg", "dist/images/mosaic/pic11.jpg", "dist/images/mosaic/pic12.jpg", "dist/images/mosaic/pic13.jpg", "dist/images/mosaic/pic14.jpg", "dist/images/mosaic/pic15.jpg", "dist/images/mosaic/pic16.jpg", "dist/images/mosaic/pic17.jpg", "dist/images/mosaic/pic18.jpg", "dist/images/mosaic/pic19.jpg"]'>
+                        <div><img src="./dist/images/mosaic/pic1.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic2.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic3.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic4.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic5.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic6.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic7.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic8.jpg" alt=""></div>
+                        <div><img src="./dist/images/mosaic/pic9.jpg" alt=""></div>
                     </div>
                 </div>
-                <div class="about-square">
+                <div class="about__square">
                     <p>Created by <a href="https://www.linkedin.com/in/victor-fo/" target="_blank">Victor Freire Oliveira</a>, VFO is a digital art, design and animation studio based in Maceió, AL - Brazil. The use of creativity, the constant search for inspiration, the knowledge about design and the love for arts make VFO have a reason to exist, choosing to be friendly, original, creative, simple and artistic in all of the creations. VFO Studio has preference for Linux based operating systems and free and open source softwares for most of its creations.</p>
-                    <div class="icons-container">
-                        <a href="https://www.instagram.com/vfo.studio/" target="_blank"><img src="./img/ico-ig.png" title="Instagram" class="sm-icon"></a>
-                        <a href="https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A" target="_blank"><img src="./img/ico-yt.png" title="YouTube" class="sm-icon"></a>
-                        <a href="https://www.behance.net/vfo" target="_blank"><img src="./img/ico-be.png" title="Behance" class="sm-icon"></a>
-                        <a href="https://github.com/oliveira-victor" target="_blank"><img src="./img/ico-gh.png" title="GitHub" class="sm-icon"></a>
-                        <a href="https://www.linkedin.com/in/victor-fo/" target="_blank"><img src="./img/ico-in.png" title="LinkedIn" class="sm-icon"></a>
+                    <div class="about__square__icons-container">
+                        <a href="https://www.instagram.com/vfo.studio/" target="_blank"><img src="./dist/images/ico-ig.png" title="Instagram" class="sm-icon"></a>
+                        <a href="https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A" target="_blank"><img src="./dist/images/ico-yt.png" title="YouTube" class="sm-icon"></a>
+                        <a href="https://www.behance.net/vfo" target="_blank"><img src="./dist/images/ico-be.png" title="Behance" class="sm-icon"></a>
+                        <a href="https://github.com/oliveira-victor" target="_blank"><img src="./dist/images/ico-gh.png" title="GitHub" class="sm-icon"></a>
+                        <a href="https://www.linkedin.com/in/victor-fo/" target="_blank"><img src="./dist/images/ico-in.png" title="LinkedIn" class="sm-icon"></a>
                     </div>
                 </div>
             </div>
             <div class="photos-container">
-                <div><img src="./img/photo1.jpg" class="reveal photo1" alt=""></div>
-                <div><img src="./img/photo2.jpg" class="reveal photo2" alt=""></div>
-                <div><img src="./img/photo3.jpg" class="reveal photo3" alt=""></div>
+                <div><img src="./dist/images/photo1.jpg" class="reveal photo1" alt=""></div>
+                <div><img src="./dist/images/photo2.jpg" class="reveal photo2" alt=""></div>
+                <div><img src="./dist/images/photo3.jpg" class="reveal photo3" alt=""></div>
             </div>
             <div class="author-text">
                 <p style="margin-bottom: 100px;"><i>"Throughout the years, VFO Studio has helped many clients express their ideas, finding solution to their problems in a creative way. From illustration to be gifted to the loved ones, to logos, videos and book illustration, people look for my services with different goals.<br><br>I'm a freelancer artist and designer who likes to play with creativity and create inspiring things for myself and for people who need this kind of way of expressing ideas and feelings. You can also contact me and let me know what kind of creative service you need, or maybe discuss ideas and suggest some partnership."</i> :)<br><br>- Victor Freire Oliveira.</p>
@@ -218,27 +218,27 @@
                     <p>Follow VFO Studio on Instagram and keep updated about new contents and projects!</p>
                     <div class="sub-form-container" id="photo1">
                         <a href="https://www.instagram.com/vfo.studio/" target="_blank">
-                            <img src="./img/ig.jpg" alt="Logo Instragram com personagens">
+                            <img src="./dist/images/ig.jpg" alt="Logo Instragram com personagens">
                             <br><p>@vfo.studio</p>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
-        <footer>
-            <div id="footer-text">
+        <footer class="footer">
+            <div id="footer__text">
                 &copy; VFO Studio • by Victor Freire Oliveira<br>All rights reserved
             </div>
-            <div id="footer-logo">
-                <img src="./img/logo2.svg" alt="">
+            <div id="footer__logo">
+                <img src="./dist/images/logo2.svg" alt="">
             </div>
         </footer>
         <div class="empty-bottom"></div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="./js/jquery.instaheader.js"></script>
-    <script src="./js/fslightbox.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/script-services.js"></script>
+    <script src="./dist/js/jquery.instaheader.js"></script>
+    <script src="./dist/js/fslightbox.js"></script>
+    <script src="./dist/js/script.js"></script>
+    <script src="./dist/js/script-services.js"></script>
 </body>
 </html>

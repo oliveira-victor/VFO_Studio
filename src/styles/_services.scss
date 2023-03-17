@@ -1,0 +1,12 @@
+@use 'variables';
+
+.services {
+    background-color: variables.$altBgColor;
+    text-align: center;
+    font-size: 0.9em;
+    margin-top: 100px;
+}
+#swipe-img {
+    width: 10vh;
+    margin: 30px auto;
+}

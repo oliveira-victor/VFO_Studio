@@ -1,0 +1,127 @@
+@use 'variables';
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: rgba(50, 50, 93, 0.3) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    position: fixed;
+    top: 0;
+    transition: top 0.3s;
+    z-index: 2;
+
+    & a {
+        font-size: 12pt;
+        color: variables.$darkColor;
+    }
+
+    & img {
+        height: 62px;
+        margin: 10px 0 0 16px;
+    }
+}
+
+.phone-menu {
+    display: none;
+}
+
+.menu {
+    max-width: 1920px;
+    width: 100%;
+
+    &__left {
+        float: left;
+    }
+
+    &__right {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        gap: 40px;
+        float: right;
+        margin-right: 30px;
+    }
+
+    &__button {
+        line-height: 75px;
+    }
+
+    &__link-button {
+        background-color: variables.$buttonColor;
+        color: #fff;
+        width: 80px;
+        height: 40px;
+        border: none;
+        border-radius: 25px;
+        font-size: 12pt;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken(variables.$buttonColor, 10%);
+        }
+    }
+}
+
+#btn {
+    width: 300px;
+    height: 70px;
+    margin: 50px auto;
+    line-height: 70px;
+    font-weight: bold;
+    border-radius: 15px;
+    color: #aac5ff;
+    background: rgb(2,0,36);
+    background: linear-gradient(147deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+#bottom-menu {
+    display: none;
+}
+
+.menu-grid {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .phone-menu {
+        display: block;
+        float: right;
+
+        & img {
+            width: 40px;
+            margin-right: 20px;
+        }
+    }
+
+    .menu__right {
+        display: none;
+    } 
+
+    #bottom-menu {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(255, 255, 255, 0.9);
+        backdrop-filter: blur(2px);
+        position: fixed;
+        bottom: 0;
+        box-shadow: rgba(50, 50, 93, 0.3) 0px -3px 12px 2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        z-index: 2;
+    }
+
+    .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 20%);
+
+        & img {
+            height: 30px;    
+        }
+    }
+
+    .menu-cell {
+        margin-top: 10px;
+        height: 80px;
+        font-size: 12pt;
+        text-align: center;
+        padding: 4px;
+        color: #727272;
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "vfo_studio",
+  "version": "1.0.0",
+  "description": "VFO Studio portfolio",
+  "main": "gulpfile.js",
+  "scripts": {
+    "gulp": "gulp",
+    "dev": "gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliveira-victor/VFO_Studio.git"
+  },
+  "keywords": [
+    "art",
+    "design",
+    "studio"
+  ],
+  "author": "Victor Freire Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliveira-victor/VFO_Studio/issues"
+  },
+  "homepage": "https://github.com/oliveira-victor/VFO_Studio#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.59.3"
+  }
+}

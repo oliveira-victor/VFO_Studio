@@ -1,0 +1,103 @@
+/* fade */
+.fade-in { animation: fadeIn 1s; }
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.fade-out { animation: fadeOut 1s; }
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@media screen and (max-width: 1023px) {
+    #preloader {
+        background-size: 30vw;
+    }
+}
+
+/* rise */
+.rise {
+    animation: rise 0.1s;
+	-webkit-animation: rise 0.1s;
+	-moz-animation: rise 0.1s;
+	-o-animation: rise 0.1s;
+}
+
+@-webkit-keyframes rise {
+	0%, 100% {transform: translateY(80px);}
+	100% {transform: translateY(0);}
+}
+
+@-moz-keyframes rise {
+	0%, 100% {transform: translateY(80px);}
+	100% {transform: translateY(0);}
+}
+
+@-o-keyframes rise {
+	0%, 100% {transform: translateY(80px);}
+	100% {transform: translateY(0);}
+}
+
+@keyframes rise {
+	0%, 100% {transform: translateY(80px);}
+	100% {transform: translateY(0);}
+}
+
+.hide {
+    animation: hide 0.1s;
+	-webkit-animation: hide 0.1s;
+	-moz-animation: hide 0.1s;
+	-o-animation: hide 0.1s;
+}
+
+@-webkit-keyframes hide {
+	0%, 100% {transform: translateY(0px);}
+	100% {transform: translateY(80px);}
+}
+
+@-moz-keyframes hide {
+	0%, 100% {transform: translateY(0px);}
+	100% {transform: translateY(80px);}
+}
+
+@-o-keyframes hide {
+	0%, 100% {transform: translateY(0px);}
+	100% {transform: translateY(80px);}
+}
+
+@keyframes hide {
+	0%, 100% {transform: translateY(0px);}
+	100% {transform: translateY(80px);}
+}
+
+.bounce {
+    animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-20px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-20px);}
+}
+
+/* bouce */
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-20px);}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	50% {transform: translateY(-20px);}
+}
