@@ -7,45 +7,54 @@
     <title>VFO Studio - links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./links-files/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/links/styles.css">
 </head>
 <body>
-    <div class="bg">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <img src="./links-files/logo1.svg" alt="Logo VFO Studio light">
+    <div class="wrapper">
+        <header>
+            <img src="./dist/images/links/bear6.png" class="b06">
+            <img src="./dist/images/links/bear5.png" class="b05">
+            <img src="./dist/images/links/bear4.png" class="b04">
+            <img src="./dist/images/links/bear3.png" class="b03">
+            <img src="./dist/images/links/bear2.gif" class="b02">
+            <img src="./dist/images/links/bear1.png" class="b01">
+            <div class="parallax-menu">
+                <img class="parallax-menu__img" src="./dist/images/logo1.svg" alt="Profile picture">
+                <h1>Good Morning!</h1>
+                <p class="parallax-menu__subtitle">Here's where you can find us</p>
+                <a href="./index.html"><button class="parallax-menu__button" type="button">VFO Studio's page</button></a>
+                <a href="https://www.redbubble.com/people/victor-fo/shop" target="_blank"><button class="parallax-menu__button" type="button">VFO Shop - international</button></a>
+                <a href="https://payhip.com/VFOStudio" target="_blank"><button class="parallax-menu__button" type="button">Get digital art</button></a>
+                <a href="https://www.instagram.com/vfo.studio/" target="_blank"><button class="parallax-menu__button" type="button">Instagram</button></a>
+                <a href="https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A" target="_blank"><button class="parallax-menu__button" type="button">YouTube</button></a>
+            </div>
+        </header>
+        <section class="section" id="bio">
+            <div class="description">
+                <div class="description__img">
+                    <img src="./dist/images/photo3.jpg" alt="Profile picture">
                 </div>
-                <div class="horario">
-                    <h2>Hello!</h2>
+                <div class="description__text">
+                    <p>
+                        Created by Victor Freire Oliveira, VFO is a digital art, design and animation studio based in Maceió, AL - Brazil. The use of creativity, the constant search for inspiration, the knowledge about design and the love for arts make VFO have a reason to exist, choosing to be friendly, original, creative, simple and artistic in all of the creations. VFO Studio has preference for Linux based operating systems and free and open source softwares for most of its creations.
+                    </p>
                 </div>
-            </header>
-            <main>
-                <div class="buttons">
-                    <button type="button" class="btn-day" onclick="window.location.href='index.html';">VFO Studio's page</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.redbubble.com/people/victor-fo';">VFO Shop - international</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='vfoshop-br.html';">VFO Shop - Brasil</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://payhip.com/VFOStudio';">Get digital art</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.instagram.com/vfo.studio/';">Instagram</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A';">YouTube</button>
-                </div>
-                <div class="char"></div>
-            </main>
-            <footer>
-                <p>
-                    &copy; 2022 VFO Studio • by Victor F. Oliveira<br>All rights reserved
-                </p>
-            </footer>
-        </div>
+            </div>
+        </section>
+        <footer class="socialmedia-footer">
+            <img src="./dist/images/logo2.svg" alt="VFO">
+            <div id="footer-txt">
+                <p>Created by: Victor Freire Oliveira</p>
+                <a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>
+            </div>
+        </footer>
     </div>
-    
-    <script src="./links-files/script.js"></script>
     <script>
         // footer
         const d = new Date();
         let year = d.getFullYear();
-        document.querySelector('footer').innerHTML = `&copy; ${year} VFO Studio • by Victor Freire Oliveira<br>All rights reserved`
+        document.querySelector('#footer-txt').innerHTML = `&copy; ${year} VFO Studio • <nobr>by Victor Freire Oliveira</nobr><br>All rights reserved<br><a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>`
     </script>
 </body>
 </html>
