@@ -72,13 +72,35 @@ header {
     width: 100%;
     object-fit: cover;
     z-index: -1;
+    display: none;
+}
+
+.b01-dark,
+.b02-dark,
+.b03-dark,
+.b04-dark,
+.b05-dark,
+.b06-dark {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.light {
+    display: none;
+}
+
+.dark {
+    display: none;
 }
 
 .parallax-menu {
     text-align: center;
 
     &__img {
-        margin-bottom: 20px;
+        margin: 0 auto 20px;
     }
 
     &__subtitle {
@@ -110,8 +132,7 @@ header {
 .section {
     font-size: 1.5em;
     padding: 2em;
-    background-color: $mainColor;
-    color: #181818;
+    background-color: #5d9140;
 }
 
 .description {
