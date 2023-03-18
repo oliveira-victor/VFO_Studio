@@ -14,7 +14,7 @@ function dayTime() {
 
 function nightTime() {
     var nightTimeLayers = document.getElementsByClassName('dark');
-    document.getElementById('bio').style.background = '#0e092e'
+    document.getElementById('bio').style.background = '#202020';
 
     for (var i=0; i < nightTimeLayers.length; i++) {
         nightTimeLayers[i].style.display = 'block'
