@@ -127,6 +127,11 @@ header {
             transform: scale(1.05);
         }
     }
+
+    &__arrow {
+        width: 60px;
+        margin-top: 40px;
+    }
 }
 
 .section {
@@ -191,6 +196,10 @@ header {
                 transform: none;
                 background-color: rgba(35, 112, 35, 0.6);
             }
+        }
+
+        &__arrow {
+            margin-top: 0;
         }
     }
 
