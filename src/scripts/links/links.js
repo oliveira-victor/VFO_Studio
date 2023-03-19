@@ -19,6 +19,7 @@ function nightTime() {
     for (var i=0; i < nightTimeLayers.length; i++) {
         nightTimeLayers[i].style.display = 'block'
         greetings.style.color = '#e2d54f'
+        document.querySelector('.description__button').classList.add('dark-txt')
     }
 }
 
