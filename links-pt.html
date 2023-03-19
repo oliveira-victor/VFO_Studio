@@ -7,45 +7,67 @@
     <title>VFO Studio - links</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Open+Sans:wght@300&family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./links-files/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./dist/css/links/styles.css">
 </head>
 <body>
-    <div class="bg">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <img src="./links-files/logo1.svg" alt="Logo VFO Studio light">
+    <div class="wrapper">
+        <header>
+            <img src="./dist/images/links/bear6.jpg" class="b06 light">
+            <img src="./dist/images/links/bear6-dark.jpg" class="b06 dark">
+            <img src="./dist/images/links/bear5.png" class="b05 light">
+            <img src="./dist/images/links/bear5-dark.png" class="b05 dark">
+            <img src="./dist/images/links/bear4.png" class="b04 light">
+            <img src="./dist/images/links/bear4-dark.png" class="b04 dark">
+            <img src="./dist/images/links/bear3.png" class="b03 light">
+            <img src="./dist/images/links/bear3-dark.png" class="b03 dark">
+            <img src="./dist/images/links/bear2.gif" class="b02 light">
+            <img src="./dist/images/links/bear2-dark.gif" class="b02 dark">
+            <img src="./dist/images/links/bear1.png" class="b01 light">
+            <img src="./dist/images/links/bear1-dark.png" class="b01 dark">
+            <div class="parallax-menu">
+                <img class="parallax-menu__img light" src="./dist/images/logo1.svg" alt="Profile picture">
+                <img class="parallax-menu__img dark" src="./dist/images/logo2.svg" alt="Profile picture">
+                <div class="greetings">
+                    <h1>Hello!</h1>
                 </div>
-                <div class="horario">
-                    <h2>Olá!</h2>
+                <p class="parallax-menu__subtitle">Encontre mais sobre o estúdio</p>
+                <a href="./index.html"><button class="parallax-menu__button" type="button">Página do VFO Studio</button></a>
+                <a href="https://www.redbubble.com/people/victor-fo/shop" target="_blank"><button class="parallax-menu__button" type="button">VFO Shop - internacional</button></a>
+                <a href="https://payhip.com/VFOStudio" target="_blank"><button class="parallax-menu__button" type="button">Baixe arte digital</button></a>
+                <a href="https://www.instagram.com/vfo.studio/" target="_blank"><button class="parallax-menu__button" type="button">Instagram</button></a>
+                <a href="https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A" target="_blank"><button class="parallax-menu__button" type="button">YouTube</button></a>
+                <img class="parallax-menu__arrow" src="./dist/images/links/arrow.gif" alt="Arrow down">
+            </div>
+        </header>
+        <section class="section" id="bio">
+            <div class="description">
+                <div class="description__img">
+                    <img src="./dist/images/photo1.jpg" alt="Profile picture">
                 </div>
-            </header>
-            <main>
-                <div class="buttons">
-                    <button type="button" class="btn-day" onclick="window.location.href='pt.html';">Página do VFO Studio</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.redbubble.com/people/victor-fo';">VFO Shop - international</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='vfoshop-br.html';">VFO Shop - Brasil</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://payhip.com/VFOStudio';">Download de arte digital</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.instagram.com/vfo.studio/';">Instagram</button>
-                    <button type="button" class="btn-day" onclick="window.location.href='https://www.youtube.com/channel/UCzxV-Nc9xxNYEqk570q2S5A';">YouTube</button>
+                <div class="description__text">
+                    <h2>
+                        Sobre VFO Studio
+                    </h2>
+                    <p>
+                        Criado por Victor Freire Oliveira, este é um estúdio criativo de arte, design e animação de Maceió - AL, Brasil. Eu posso ajudar você a encontrar soluções oferecendo serviços de multimídia, tais como criando ilustrações para diferentes tipos de projetos que você possa precisar, assim como oferecer soluções em Design Gráfico e Desenvolvimento Web, criando sites tais como este que você está navegando agora. Sinta-se com inspiração para explorar minhas páginas e conhecer mais. Você pode sempre entrar em contato se precisar de minha ajuda. Certamente coisas belas surgirão.
+                    <a href="./index.html#section6">
+                        <button class="description__button">Entre em contato</button>
+                    </a>
                 </div>
-                <div class="char"></div>
-            </main>
-            <footer>
-                <p>
-                    &copy; 2022 VFO Studio • por Victor F. Oliveira<br>Todos os direitos reservados
-                </p>
-            </footer>
-        </div>
+            </div>
+            <p class="description__fun-fact">
+                Fato interessante: esta página muda de tema a depender se é dia ou noite!
+            </p>
+        </section>
+        <footer class="socialmedia-footer">
+            <img src="./dist/images/logo2.svg" alt="VFO">
+            <div id="footer-txt">
+                <p>Criado por: Victor Freire Oliveira</p>
+                <a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>
+            </div>
+        </footer>
     </div>
-    
-    <script src="./links-files/script-pt.js"></script>
-    <script>
-        // footer
-        const d = new Date();
-        let year = d.getFullYear();
-        document.querySelector('footer').innerHTML = `&copy; ${year} VFO Studio • por Victor F. Oliveira<br>Todos os direitos reservados`
-    </script>
+    <script src="./dist/js/links/links-pt.js"></script>
 </body>
 </html>
