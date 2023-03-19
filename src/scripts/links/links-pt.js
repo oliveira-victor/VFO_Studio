@@ -38,4 +38,4 @@ if (hour >= 0 && hour < 6) {
 }
 
 // Footer
-document.querySelector('#footer-txt').innerHTML = `&copy; ${year} VFO Studio • <nobr>por Victor Freire Oliveira</nobr><br>Todos os direitos reservados<br><a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a>`
+document.querySelector('#footer-txt').innerHTML = `&copy; ${year} VFO Studio • <nobr>por Victor Freire Oliveira</nobr><br>Todos os direitos reservados<br><a href="https://github.com/oliveira-victor" target="_blank">github.com/oliveira-victor</a><br><br><p><a class="inactive-txt" href="./links.html">English</a> | <u>Português</u></p>`
