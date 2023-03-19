@@ -100,4 +100,13 @@ function phoneMenu() {
 // footer
 const d = new Date();
 let year = d.getFullYear();
-document.getElementById('footer__text').innerHTML = `&copy; ${year} VFO Studio • by Victor Freire Oliveira<br>All rights reserved`
+document.getElementById('footer__text').innerHTML = `
+&copy; ${year} VFO Studio • <nobr>by Victor Freire Oliveira</nobr>
+<br>All rights reserved<br>
+<a href="https://github.com/oliveira-victor" target="_blank">
+    github.com/oliveira-victor
+</a><br><br>
+<p>
+    <u>English</u> | <a class="inactive-txt" href="./links-pt.html">Português</a>
+</p>
+`
