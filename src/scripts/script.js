@@ -113,8 +113,8 @@ if (document.documentElement.lang === "en") {
     `
 } else {
     footerTxt.innerHTML = `
-    &copy; ${year} VFO Studio • <nobr>by Victor Freire Oliveira</nobr>
-    <br>All rights reserved<br>
+    &copy; ${year} VFO Studio • <nobr>por Victor Freire Oliveira</nobr>
+    <br>Todos os direitos reservados<br>
     <a href="https://github.com/oliveira-victor" target="_blank">
         github.com/oliveira-victor
     </a><br><br>
