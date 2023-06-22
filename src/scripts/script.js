@@ -72,33 +72,29 @@ window.addEventListener("scroll", reveal);
 
 
 // phone menu
-let toggleMenu = false
 const bottomMenu = document.querySelector('#bottom-menu')
 const emptyBottom = document.querySelector('.empty-bottom')
-const menuIcon = document.querySelector('.phone-menu')
+const phoneMenuIcon = document.querySelector('.phone-menu')
 
-function phoneMenu() {
-    if (toggleMenu == false) {
-        toggleMenu = true
+phoneMenuIcon.addEventListener('click', () => {
+    const isOpened = phoneMenuIcon.getAttribute('aria-expanded');
+    if (isOpened === 'false') {
+        phoneMenuIcon.setAttribute('aria-expanded', 'true');
         bottomMenu.classList.remove('hide')
         bottomMenu.classList.add('rise')
         bottomMenu.style.display = 'block'
         emptyBottom.style.display = 'block'
-        menuIcon.innerHTML = '<img src="./dist/images/close-icon.svg" alt="Close menu icon">'
     } else {
-        toggleMenu = false
+        phoneMenuIcon.setAttribute('aria-expanded', 'false');
         bottomMenu.classList.remove('rise')
         bottomMenu.classList.add('hide')
-        menuIcon.innerHTML = '<img src="./dist/images/menu-icon.svg" alt="Hamburguer menu icon">'
 
-            setTimeout(function() {
-                bottomMenu.style.display = 'none'
-                emptyBottom.style.display = 'none'
-            }, 100)
-        
-        
+        setTimeout(function() {
+            bottomMenu.style.display = 'none'
+            emptyBottom.style.display = 'none'
+        }, 100)
     }
-}
+})
 
 // footer
 const d = new Date();

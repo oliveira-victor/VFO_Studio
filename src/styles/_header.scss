@@ -85,11 +85,36 @@ header {
     .phone-menu {
         display: block;
         float: right;
+        margin: 5px;
+        background: transparent;
+        border: none;
 
-        & img {
-            width: 40px;
-            margin-right: 20px;
+        & svg {
+            fill: #b3b3b3;
         }
+
+        & .line {
+            transition: 0.5s;
+            transform-origin: center;
+        }
+
+        &[aria-expanded="true"] :is(.top, .bottom) {
+            y: 45;
+        }
+
+        &[aria-expanded="true"] .top {
+            rotate: 45deg;
+        }
+
+        &[aria-expanded="true"] .middle {
+            opacity: 0;
+        }
+
+        &[aria-expanded="true"] .bottom {
+            rotate: -45deg;
+        }
+
+        
     }
 
     .menu__right {
