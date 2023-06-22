@@ -75,6 +75,7 @@ window.addEventListener("scroll", reveal);
 let toggleMenu = false
 const bottomMenu = document.querySelector('#bottom-menu')
 const emptyBottom = document.querySelector('.empty-bottom')
+const menuIcon = document.querySelector('.phone-menu')
 
 function phoneMenu() {
     if (toggleMenu == false) {
@@ -83,10 +84,12 @@ function phoneMenu() {
         bottomMenu.classList.add('rise')
         bottomMenu.style.display = 'block'
         emptyBottom.style.display = 'block'
+        menuIcon.innerHTML = '<img src="./dist/images/close-icon.svg" alt="Close menu icon">'
     } else {
         toggleMenu = false
         bottomMenu.classList.remove('rise')
         bottomMenu.classList.add('hide')
+        menuIcon.innerHTML = '<img src="./dist/images/menu-icon.svg" alt="Hamburguer menu icon">'
 
             setTimeout(function() {
                 bottomMenu.style.display = 'none'
