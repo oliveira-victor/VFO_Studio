@@ -18,32 +18,13 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16pt;
-    color: variables.$darkColor;
-    background-color: #fff;
-}
-
-section {
-    padding-top: 20px;
-}
-
-h1 {
+h2 {
     font-size: 32pt;
     padding: 20px;
     font-weight: lighter;
     color: variables.$darkColor;
     text-align: center;
     margin-bottom: 30px;
-}
-
-h2 {
-    padding: 20px;
-    font-weight: lighter;
-    color: variables.$darkColor;
-    text-align: center;
-    margin: 10px 0;
 }
 
 a {
@@ -53,6 +34,17 @@ a {
 
 li {
     list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16pt;
+    color: variables.$darkColor;
+    background-color: #fff;
+}
+
+section {
+    padding-top: 20px;
 }
 
 #preloader {
