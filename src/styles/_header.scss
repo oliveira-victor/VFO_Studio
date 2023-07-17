@@ -40,6 +40,8 @@ header {
 
     &__button {
         line-height: 75px;
+        width: 80px;
+        text-align: center;
 
         &:hover {
             color: variables.$buttonColor;
