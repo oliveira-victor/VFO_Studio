@@ -12,6 +12,8 @@ var currentScrollPos = window.pageYOffset;
 
 // preloader
 var loader = document.getElementById('preloader');
+const welcome = document.querySelector('.welcome');
+const intro = document.querySelector('.intro');
 
 setTimeout(function(){
     loader.classList.add("fade-out")
@@ -28,6 +30,10 @@ window.addEventListener("load", function() {
     
     setTimeout(function(){
     loader.style.display = "none";
+    welcome.style.display = "inline-block";
+    setTimeout(() => {
+        intro.style.display = "inline-block";
+    }, 700);
 }, 1000);
     
 })
