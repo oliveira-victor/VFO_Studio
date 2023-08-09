@@ -10,10 +10,13 @@
 
 .about__square {
     padding: 24px;
+}
 
-    &__icons-container {
-        margin-top: 100px;
-    }
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .sm-icon {
