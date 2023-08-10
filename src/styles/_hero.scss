@@ -3,28 +3,34 @@
     min-height: 100vh;
     background-image: url(../images/hero1.jpg);
     background-size: cover;
+    background-attachment: fixed;
     text-align: center;
+    position: relative;
 
     &__content {
         display: inline-block;
         max-width: 500px;
         width: 100%;
-        margin-top: 10%;
+        margin-top: 7%;
         color: #fff;
         font-size: 20pt;
-        text-shadow: 2px 2px 4px #404040;
-
-        & img {
-            width: 80%;
-        }
+        text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.938);
 
         & .welcome {
+            width: 80%;
             display: none;
         }
 
         & .intro {
             display: none;
         }
+    }
+
+    .paper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
     }
 }
 
@@ -47,11 +53,5 @@
 
     .hero {
         min-height: 600px;
-    }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-    .hero__content {
-        margin-top: 30%;
     }
 }
